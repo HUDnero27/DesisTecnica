@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-11-2023 a las 22:36:18
+-- Tiempo de generación: 09-11-2023 a las 02:35:34
 -- Versión del servidor: 8.0.33
 -- Versión de PHP: 8.2.4
 
@@ -29,21 +29,25 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `candidatos` (
   `id` int NOT NULL,
-  `nombre` varchar(100) NOT NULL
+  `nombre` varchar(100) NOT NULL,
+  `region_id` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Volcado de datos para la tabla `candidatos`
 --
 
-INSERT INTO `candidatos` (`id`, `nombre`) VALUES
-(1, 'Ricardo Miranda'),
-(2, 'Jason Leon'),
-(3, 'Ricardo Miranda'),
-(4, 'Etianne Contreras'),
-(5, 'Jason Leon'),
-(6, 'Ricardo Miranda'),
-(7, 'Ricardo Mirandaw');
+INSERT INTO `candidatos` (`id`, `nombre`, `region_id`) VALUES
+(1, 'Juan Pérez', 1),
+(2, 'María González', 1),
+(3, 'Pedro Alonso', 1),
+(4, 'Ana López', 1),
+(5, 'Luis Romero', 1),
+(6, 'Sofía Martínez', 1),
+(7, 'Carlos García', 1),
+(8, 'Isabel Jiménez', 1),
+(9, 'David Rodríguez', 1),
+(10, 'Laura Sánchez', 1);
 
 -- --------------------------------------------------------
 
@@ -224,7 +228,7 @@ ALTER TABLE `votos`
 -- AUTO_INCREMENT de la tabla `candidatos`
 --
 ALTER TABLE `candidatos`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `como_se_entero`
